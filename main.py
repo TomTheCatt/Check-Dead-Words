@@ -81,7 +81,13 @@ def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 if __name__ == "__main__":
+    print("Installing colorama. . .")
     install("colorama")
+    print("Installations complete!")
+    time.sleep(0.5)
+    print("Clearing terminal. . .")
+    time.sleep(1.5)
+    cls()
 
 while True:
     in_quotation, found_dead_word = False, False
@@ -137,3 +143,4 @@ while True:
         cls()
         continue
     break
+  

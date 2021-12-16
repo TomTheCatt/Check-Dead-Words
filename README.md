@@ -6,7 +6,7 @@ Check Dead Words is a program used to check what's known as "dead words" in a se
 ## Instructions
 A) Download python at [Python 3's download page.](https://www.python.org/downloads/)
 
-B) Install [colorama](https://pypi.org/project/colorama/) via pip installer:
+B) An attempt will be made to install colorama from the script. If an install failed, use the below to install [colorama](https://pypi.org/project/colorama/) via pip installer:
 ```
 pip install colorama
 # or

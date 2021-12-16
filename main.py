@@ -1,5 +1,5 @@
 from colorama import Fore, Back, Style, init
-import os, sys, time
+import os, sys, time, pip, subprocess
 init()
 
 dead_words = [
@@ -77,6 +77,12 @@ punctuation = ["!", ".", ":", ";", "-", "?"]
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+if __name__ == "__main__":
+    install("colorama")
+
 while True:
     in_quotation, found_dead_word = False, False
     
@@ -131,4 +137,3 @@ while True:
         cls()
         continue
     break
-

@@ -1,7 +1,3 @@
-from colorama import Fore, Back, Style, init
-import os, sys, time, pip, subprocess
-init()
-
 dead_words = [
     ["you", 0],
     ["a lot", 0],
@@ -81,10 +77,22 @@ def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 if __name__ == "__main__":
+    print("Importing pip. . .")
+    import pip
+    print("Importing subprocess. . .")
+    import subprocess
+    print("Importing sys. . . ")
+    import sys
     print("Installing colorama. . .")
     install("colorama")
-    print("Installations complete!")
-    time.sleep(0.5)
+    print("Importing colorama. . .")
+    from colorama import Fore, Back, Style, init
+    print("Initializing colorama. . .")
+    init()
+    print("Importing time. . .")
+    import time
+    print("Importing os. . .")
+    import os
     print("Clearing terminal. . .")
     time.sleep(1.5)
     cls()
@@ -143,4 +151,3 @@ while True:
         cls()
         continue
     break
-  

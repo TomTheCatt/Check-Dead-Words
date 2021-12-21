@@ -1,5 +1,8 @@
 # Check Dead Words
 
+# IMPORTANT !!!
+Check-Dead-Words has been updated and replaced by [CDead](https://github.com/TomTheCatt/CDead), featuring more accurate dead word identification, bigger input, and better optimized code.
+
 ## About
 Check Dead Words is a program used to check what's known as "dead words" in a sentances or paragraph. This allows students to easily check if dead words are present in their papers without needing to go through each paragraph word-for-word.
 
